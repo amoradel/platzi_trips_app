@@ -23,7 +23,7 @@ class DescriptionPlace extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
         ),
-        new Rating(rating, 24.0)
+        Rating(rating, 24.0, 323.0)
         // Row(
         //   children: <Widget>[star(1), star(1), star(0.5), star(0), star(0)],
         // ),

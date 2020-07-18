@@ -32,17 +32,17 @@ class Review extends StatelessWidget {
                   fontSize: 13.0,
                   color: Color(0xFFa3a5a7)),
             )),
-        new Rating(rating, 16)
+        Rating(rating, 18, 0)
       ],
     );
 
     final userComment = Container(
         margin: EdgeInsets.only(left: 20.0),
         child: Text(
-          name,
+          comment,
           textAlign: TextAlign.left,
           style: TextStyle(
-              fontFamily: "Lato-Regular", fontWeight: FontWeight.w900),
+              fontFamily: "Lato-Regular", fontWeight: FontWeight.w600),
         ));
 
     final userDetails = Column(

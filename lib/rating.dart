@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 class Rating extends StatelessWidget {
   double numberStars;
   double fontSize;
+  double marginTop;
 
-  Rating(this.numberStars, this.fontSize);
+  Rating(this.numberStars, this.fontSize, this.marginTop);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +17,8 @@ class Rating extends StatelessWidget {
       else if (withBoder == 0) starFill = Icons.star_border;
 
       return new Container(
-        margin: EdgeInsets.only(top: 323.0, right: 3.0),
+        margin: EdgeInsets.only(top: marginTop, right: 3.0),
+        padding: EdgeInsets.only(bottom: 2.0),
         child: Icon(
           starFill,
           color: Color(0xFFf2C611),
