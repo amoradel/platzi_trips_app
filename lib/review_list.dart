@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/review.dart';
 
-String pathImage = "assets/img/user.jpg";
-String name = "Alter M.";
 String details = "1 review 5 photos";
-String comment = "There is an amazing place in Sri Lanka";
-double rating = 4.5;
+String comment = "There is an amazing place in La Ceiba";
 
 class ReviewList extends StatelessWidget {
   @override
@@ -14,11 +11,11 @@ class ReviewList extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Review(pathImage, name, details, comment, rating),
-          Review(pathImage, name, details, comment, rating),
-          Review(pathImage, name, details, comment, rating),
-          Review(pathImage, name, details, comment, rating),
-          Review(pathImage, name, details, comment, rating)
+          Review("assets/img/user4.jpg", 'Litoska', details, comment, 4.5),
+          Review("assets/img/user2.jpg", 'Alter', details, comment, 3),
+          Review("assets/img/user3.jpg", 'Rick', details, comment, 5),
+          Review("assets/img/user5.jpg", 'Sam', details, comment, 4),
+          Review("assets/img/user.jpg", 'Lin', details, comment, 5)
         ],
       ),
     );

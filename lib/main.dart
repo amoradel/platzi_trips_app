@@ -5,7 +5,7 @@ import 'package:platzi_trips_app/review_list.dart';
 
 void main() => runApp(MyApp());
 
-String name = 'Duwili Ella';
+String name = 'La Ceiba';
 double rating = 3.5;
 String description =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum ligula eget sollicitudin placerat. Nullam pharetra, dolor eu scelerisque tristique, magna est ornare metus, in viverra velit urna nec ipsum. In hac habitasse platea dictumst. Donec eget lacinia magna.';
