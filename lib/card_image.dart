@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CardImage extends StatelessWidget {
-  String pathImage = 'assets/img/landscape1.jpg';
+  String pathImage;
 
   CardImage(this.pathImage);
 
@@ -24,6 +24,6 @@ class CardImage extends StatelessWidget {
           ]),
     );
 
-    return Container();
+    return card;
   }
 }
