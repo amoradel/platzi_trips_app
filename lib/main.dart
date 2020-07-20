@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/description_place.dart';
 import 'package:platzi_trips_app/header_appbar.dart';
+import 'package:platzi_trips_app/reto3/aspirant_header_appbar.dart';
+import 'package:platzi_trips_app/review.dart';
 import 'package:platzi_trips_app/review_list.dart';
+import 'package:platzi_trips_app/reto3/aspirant_list.dart';
+import 'package:platzi_trips_app/reto3/my_clipper.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,29 +23,40 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.indigo),
         home: Scaffold(
-          // appBar: AppBar(
-          //   leading: IconButton(
-          //     icon: Icon(
-          //       Icons.arrow_back,
-          //       color: Colors.white,
-          //     ),
-          //     onPressed: () {},
-          //   ),
-          //   title: Text('Alter'),
-          // ),
-          // body: ,
-          // body: ReviewList(),
-          body: Stack(
-            children: <Widget>[
-              ListView(
-                children: <Widget>[
-                  DescriptionPlace(name, rating, description),
-                  ReviewList()
-                ],
-              ),
-              HeaderAppbar()
-            ],
-          ),
-        ));
+            // appBar: AppBar(
+            //   leading: IconButton(
+            //     icon: Icon(
+            //       Icons.arrow_back,
+            //       color: Colors.white,
+            //     ),
+            //     onPressed: () {},
+            //   ),
+            //   title: Text('Alter'),
+            // ),
+
+            // body: AspirantHeaderAppbar(),
+
+            body: Stack(
+          children: <Widget>[
+            ListView(children: <Widget>[
+              AspirantList(),
+            ]),
+            AspirantHeaderAppbar()
+          ],
+        )
+
+            // body: ReviewList(),
+            // body: Stack(
+            //   children: <Widget>[
+            //     ListView(
+            //       children: <Widget>[
+            //         DescriptionPlace(name, rating, description),
+            //         ReviewList()
+            //       ],
+            //     ),
+            //     HeaderAppbar()
+            //   ],
+            // ),
+            ));
   }
 }
