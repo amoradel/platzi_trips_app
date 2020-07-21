@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/review.dart';
+import 'package:platzi_trips_app/home/review.dart';
 
 String details = "1 review 5 photos";
 String comment = "There is an amazing place in La Ceiba";

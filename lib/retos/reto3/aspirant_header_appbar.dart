@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/reto3/my_clipper.dart';
+import 'package:platzi_trips_app/retos/reto3/my_clipper.dart';
 
 class AspirantHeaderAppbar extends StatelessWidget {
   const AspirantHeaderAppbar({Key key}) : super(key: key);

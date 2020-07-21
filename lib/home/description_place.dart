@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/button_purple.dart';
-import 'package:platzi_trips_app/rating.dart';
+import 'package:platzi_trips_app/home/button_purple.dart';
+import 'package:platzi_trips_app/home/rating.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
@@ -17,10 +17,8 @@ class DescriptionPlace extends StatelessWidget {
           margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
           child: Text(
             namePlace,
-            style: TextStyle(
-                fontFamily: "Lato-Regular",
-                fontSize: 30.0,
-                fontWeight: FontWeight.w900),
+            style:
+                TextStyle(fontFamily: "Lato-Regular", fontSize: 30.0, fontWeight: FontWeight.w900),
             textAlign: TextAlign.center,
           ),
         ),
