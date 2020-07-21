@@ -23,40 +23,37 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.indigo),
         home: Scaffold(
-            // appBar: AppBar(
-            //   leading: IconButton(
-            //     icon: Icon(
-            //       Icons.arrow_back,
-            //       color: Colors.white,
-            //     ),
-            //     onPressed: () {},
-            //   ),
-            //   title: Text('Alter'),
-            // ),
+          // appBar: AppBar(
+          //   leading: IconButton(
+          //     icon: Icon(
+          //       Icons.arrow_back,
+          //       color: Colors.white,
+          //     ),
+          //     onPressed: () {},
+          //   ),
+          //   title: Text('Alter'),
+          // ),
 
-            // body: AspirantHeaderAppbar(),
+          //     body: Stack(
+          //   children: <Widget>[
+          //     ListView(children: <Widget>[
+          //       AspirantList(),
+          //     ]),
+          //     AspirantHeaderAppbar()
+          //   ],
+          // )
 
-            body: Stack(
-          children: <Widget>[
-            ListView(children: <Widget>[
-              AspirantList(),
-            ]),
-            AspirantHeaderAppbar()
-          ],
-        )
-
-            // body: ReviewList(),
-            // body: Stack(
-            //   children: <Widget>[
-            //     ListView(
-            //       children: <Widget>[
-            //         DescriptionPlace(name, rating, description),
-            //         ReviewList()
-            //       ],
-            //     ),
-            //     HeaderAppbar()
-            //   ],
-            // ),
-            ));
+          body: Stack(
+            children: <Widget>[
+              ListView(
+                children: <Widget>[
+                  DescriptionPlace(name, rating, description),
+                  ReviewList()
+                ],
+              ),
+              HeaderAppbar()
+            ],
+          ),
+        ));
   }
 }
