@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/home/home_trips.dart';
-import 'package:platzi_trips_app/profile_trips.dart';
+import 'package:platzi_trips_app/home_trips/home_trips.dart';
+import 'package:platzi_trips_app/profile_trips/profile_trips.dart';
 import 'package:platzi_trips_app/search_trips.dart';
 
 class PlatziTrips extends StatefulWidget {
@@ -24,7 +24,6 @@ class _PlatziTripsState extends State<PlatziTrips> {
 
   @override
   Widget build(BuildContext context) {
-    // return Scaffold(body: HomeTrips());
     return Scaffold(
       body: widgetsChildren[indexTap],
       bottomNavigationBar: Theme(

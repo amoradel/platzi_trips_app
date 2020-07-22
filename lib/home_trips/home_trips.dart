@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/home/description_place.dart';
-import 'package:platzi_trips_app/home/header_appbar.dart';
-import 'package:platzi_trips_app/home/review_list.dart';
+import 'package:platzi_trips_app/home_trips/description_place.dart';
+import 'package:platzi_trips_app/home_trips/header_appbar.dart';
+import 'package:platzi_trips_app/home_trips/review_list.dart';
 
 class HomeTrips extends StatelessWidget {
   String name = 'La Ceiba';
@@ -15,7 +15,10 @@ class HomeTrips extends StatelessWidget {
     return Stack(
       children: <Widget>[
         ListView(
-          children: <Widget>[DescriptionPlace(name, rating, description), ReviewList()],
+          children: <Widget>[
+            DescriptionPlace(name, rating, description),
+            ReviewList()
+          ],
         ),
         HeaderAppbar()
       ],

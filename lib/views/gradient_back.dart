@@ -1,14 +1,28 @@
 import 'package:flutter/material.dart';
 
 class GradientBack extends StatelessWidget {
-  String title = 'Popular';
+  String title;
+  double heightGradient;
+  List aligmentXY = [];
 
-  GradientBack(this.title);
+  GradientBack(this.title, this.heightGradient, this.aligmentXY);
 
   @override
   Widget build(BuildContext context) {
+    final textScreen = Text(
+      title,
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: 30.0,
+        fontFamily: 'Lato-Regular',
+        fontWeight: FontWeight.bold,
+      ),
+    );
+
     return Container(
-      height: 250.0,
+      alignment: Alignment(aligmentXY[0], aligmentXY[1]),
+      // alignment: Alignment(-0.9, -0.6),
+      height: heightGradient,
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [Color(0xFF4268D3), Color(0xFF584CD1)],
@@ -16,15 +30,7 @@ class GradientBack extends StatelessWidget {
               end: FractionalOffset(1.0, 0.6),
               stops: [0.0, 0.6],
               tileMode: TileMode.clamp)),
-      child: Text(
-        title,
-        style: TextStyle(
-            color: Colors.white,
-            fontSize: 30.0,
-            fontFamily: 'Lato-Regular',
-            fontWeight: FontWeight.bold),
-      ),
-      alignment: Alignment(-0.9, -0.6),
+      child: textScreen,
     );
   }
 }

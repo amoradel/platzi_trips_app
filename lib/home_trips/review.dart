@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/home/rating.dart';
+import 'package:platzi_trips_app/home_trips/rating.dart';
 
 class Review extends StatelessWidget {
   String pathImage;
@@ -27,8 +27,10 @@ class Review extends StatelessWidget {
             child: Text(
               details,
               textAlign: TextAlign.left,
-              style:
-                  TextStyle(fontFamily: "Lato-Regular", fontSize: 13.0, color: Color(0xFFa3a5a7)),
+              style: TextStyle(
+                  fontFamily: "Lato-Regular",
+                  fontSize: 13.0,
+                  color: Color(0xFFa3a5a7)),
             )),
         Rating(rating, 18, 0)
       ],
@@ -39,7 +41,8 @@ class Review extends StatelessWidget {
         child: Text(
           comment,
           textAlign: TextAlign.left,
-          style: TextStyle(fontFamily: "Lato-Regular", fontWeight: FontWeight.w600),
+          style: TextStyle(
+              fontFamily: "Lato-Regular", fontWeight: FontWeight.w600),
         ));
 
     final userDetails = Column(
@@ -53,7 +56,8 @@ class Review extends StatelessWidget {
       height: 80.0,
       decoration: BoxDecoration(
           shape: BoxShape.circle,
-          image: DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
+          image:
+              DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
     );
 
     return Row(
