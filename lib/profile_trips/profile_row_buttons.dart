@@ -12,7 +12,7 @@ class ProfileRowButtons extends StatelessWidget {
         onTap: () {
           Scaffold.of(context).showSnackBar(
             SnackBar(
-              content: Text("Agregar"),
+              content: Text("Guardados"),
             ),
           );
         },
@@ -36,14 +36,14 @@ class ProfileRowButtons extends StatelessWidget {
         onTap: () {
           Scaffold.of(context).showSnackBar(
             SnackBar(
-              content: Text("Agregar"),
+              content: Text("Compartir"),
             ),
           );
         },
         child: Container(
           child: CircleAvatar(
             radius: 20,
-            backgroundColor: Colors.white54,
+            backgroundColor: Colors.white70,
             child: Icon(
               Icons.cast,
               color: Colors.indigo,
@@ -84,14 +84,14 @@ class ProfileRowButtons extends StatelessWidget {
         onTap: () {
           Scaffold.of(context).showSnackBar(
             SnackBar(
-              content: Text("Agregar"),
+              content: Text("Correo"),
             ),
           );
         },
         child: Container(
           child: CircleAvatar(
             radius: 20,
-            backgroundColor: Colors.white54,
+            backgroundColor: Colors.white70,
             child: Icon(
               Icons.email,
               color: Colors.indigo,
@@ -108,14 +108,14 @@ class ProfileRowButtons extends StatelessWidget {
         onTap: () {
           Scaffold.of(context).showSnackBar(
             SnackBar(
-              content: Text("Agregar"),
+              content: Text("Perfil"),
             ),
           );
         },
         child: Container(
           child: CircleAvatar(
             radius: 20,
-            backgroundColor: Colors.white54,
+            backgroundColor: Colors.white70,
             child: Icon(
               Icons.person,
               color: Colors.indigo,

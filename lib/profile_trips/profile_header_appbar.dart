@@ -31,7 +31,7 @@ class ProfileHeaderAppbar extends StatelessWidget {
         GradientBack('Profile', 400.0, [-0.905, -0.765]),
         settingsIcon,
         ProfileUserInfo(),
-        ProfileRowButtons()
+        ProfileRowButtons(),
       ],
     );
   }
