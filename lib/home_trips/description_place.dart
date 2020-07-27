@@ -3,9 +3,9 @@ import 'package:platzi_trips_app/home_trips/button_purple.dart';
 import 'package:platzi_trips_app/home_trips/rating.dart';
 
 class DescriptionPlace extends StatelessWidget {
-  String namePlace;
-  String textDescription;
-  double rating;
+  final String namePlace;
+  final String textDescription;
+  final double rating;
 
   DescriptionPlace(this.namePlace, this.rating, this.textDescription);
 

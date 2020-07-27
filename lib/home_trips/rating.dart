@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Rating extends StatelessWidget {
-  double numberStars;
-  double fontSize;
-  double marginTop;
+  final double numberStars;
+  final double fontSize;
+  final double marginTop;
 
   Rating(this.numberStars, this.fontSize, this.marginTop);
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class GradientBack extends StatelessWidget {
-  String title;
-  double heightGradient;
-  List aligmentXY = [];
+  final String title;
+  final double heightGradient;
+  final List aligmentXY;
 
   GradientBack(this.title, this.heightGradient, this.aligmentXY);
 

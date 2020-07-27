@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/home_trips/rating.dart';
 
 class Review extends StatelessWidget {
-  String pathImage;
-  String name;
-  String details;
-  String comment;
-  double rating;
+  final String pathImage;
+  final String name;
+  final String details;
+  final String comment;
+  final double rating;
 
   Review(this.pathImage, this.name, this.details, this.comment, this.rating);
 

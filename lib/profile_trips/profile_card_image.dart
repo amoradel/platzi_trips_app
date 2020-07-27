@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/profile_trips/profile_card_info.dart';
-import 'package:platzi_trips_app/views/floating_action_button_green.dart';
 
 class ProfileCardImage extends StatelessWidget {
-  String pathImage = 'assets/img/landscape1.jpg';
+  final String pathImage;
 
   ProfileCardImage(this.pathImage);
 

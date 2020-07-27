@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ProfileRowButtons extends StatelessWidget {
-  double sizeIcons = 28;
-  double marginLeftIcons = 28.5;
+  final double sizeIcons = 28;
+  final double marginLeftIcons = 28.5;
 
   @override
   Widget build(BuildContext context) {

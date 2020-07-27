@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/profile_trips/profile_card_image.dart';
 import 'package:platzi_trips_app/profile_trips/profile_card_list.dart';
 import 'package:platzi_trips_app/profile_trips/profile_header_appbar.dart';
 

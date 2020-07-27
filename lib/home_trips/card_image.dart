@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/views/floating_action_button_green.dart';
 
 class CardImage extends StatelessWidget {
-  String pathImage;
+  final String pathImage;
 
   CardImage(this.pathImage);
 

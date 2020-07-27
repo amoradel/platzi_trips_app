@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Aspirant extends StatelessWidget {
-  String pathImage;
-  String name;
-  String experience;
-  bool status;
+  final String pathImage;
+  final String name;
+  final String experience;
+  final bool status;
 
   Aspirant(this.pathImage, this.name, this.experience, this.status);
 

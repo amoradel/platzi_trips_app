@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ButtonPurple extends StatelessWidget {
-  String buttonText;
+  final String buttonText;
 
   ButtonPurple(this.buttonText);
 
@@ -35,7 +35,10 @@ class ButtonPurple extends StatelessWidget {
           child: Center(
             child: Text(
               buttonText,
-              style: TextStyle(fontSize: 18.0, fontFamily: 'Lato-Regular', color: Colors.white),
+              style: TextStyle(
+                  fontSize: 18.0,
+                  fontFamily: 'Lato-Regular',
+                  color: Colors.white),
             ),
           ),
         ),
